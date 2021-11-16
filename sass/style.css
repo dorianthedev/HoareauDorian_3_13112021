@@ -182,7 +182,27 @@ a {
 
 .functioning h2 {
   font-size: 20px;
-  margin: 0 0 0 12px;
+  margin: 0 0 20px 12px;
+}
+
+@media screen and (min-width: 575px) {
+  .functioning h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .functioning h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .functioning__block-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .functioning__block {
@@ -200,17 +220,14 @@ a {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 820px) {
+  .functioning__block {
+    width: 33%;
+  }
+}
+
 .functioning__block:hover {
   background-color: #e9ddf8;
-}
-
-.functioning__block .fa-list-ul, .functioning__block .fa-store, .functioning__block .fa-mobile-alt {
-  font-size: 14px;
-  color: #525252;
-}
-
-.functioning__block .fa-list-ul:hover, .functioning__block .fa-store:hover, .functioning__block .fa-mobile-alt:hover {
-  color: #732acb;
 }
 
 .functioning__block-num {
@@ -242,8 +259,28 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 10px;
           column-gap: 10px;
-  margin-left: 10%;
+  margin-left: 15%;
+}
+
+.functioning__block-icon {
+  width: 18px;
+}
+
+.functioning .fa-list-ul, .functioning .fa-store, .functioning .fa-mobile-alt {
+  font-size: 14px;
+  color: #525252;
+}
+
+.functioning .fa-list-ul:hover, .functioning .fa-store:hover, .functioning .fa-mobile-alt:hover {
+  color: #732acb;
+}
+
+.functioning h4 {
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

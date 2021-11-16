@@ -154,7 +154,18 @@ a {
     }
     h2 {
         font-size: 20px;
-        margin: 0 0 0 12px;
+        margin: 0 0 20px 12px;
+        @media screen and(min-width: 575px) {
+            text-align: center;
+        }
+        @media screen and(min-width: 820px) {
+            text-align: center;
+        }
+    }
+    &__block-all {
+        @media screen and(min-width: 820px) {
+            display: flex;
+        }
     }
     
     &__block {
@@ -166,15 +177,11 @@ a {
         background-color: lighten(black, 92);
         position: relative;
         margin-bottom: 25px;
+        @media screen and(min-width: 820px) {
+            width: 33%;
+        }
         &:hover {
             background-color: lighten($color-primaire, 32);
-        }
-        .fa-list-ul, .fa-store, .fa-mobile-alt {
-            font-size: 14px;
-            color: lighten(black, 32);
-                &:hover {
-                    color: darken($color-primaire, 12);
-                }
         }
     }
     &__block-num {
@@ -196,8 +203,23 @@ a {
     &__icon-and-text {
         width: 100%;
         display: flex;
+        align-items: center;
         column-gap: 10px;
-        margin-left: 10%;
+        margin-left: 15%;
         
+    }
+    &__block-icon {
+        width: 18px;
+        
+    }
+    .fa-list-ul, .fa-store, .fa-mobile-alt {
+        font-size: 14px;
+        color: lighten(black, 32);
+            &:hover {
+                color: darken($color-primaire, 12);
+            }
+    }
+    h4 {
+        font-size: 14px;
     }
 }
