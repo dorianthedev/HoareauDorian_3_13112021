@@ -1,24 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-/****** style global site ******/
-$color-primaire: #9356DC; 
-$color-secondaire:#FF79DA;
-$color-tertiaire:#99E2D0;
 
-@mixin button-background {
-    background: rgb(147,86,220);
-    background: -moz-linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
-    background: -webkit-linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
-    background: linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);   
-}
-
-@mixin box--shadow {
-    box-shadow: 3px 6px 8px 0px rgba(0,0,0,0.21);
-    -webkit-box-shadow: 3px 6px 8px 0px rgba(0,0,0,0.21);
-    -moz-box-shadow: 3px 6px 8px 0px rgba(0,0,0,0.21);
-}
+/****** variables & mixins ******/
+@import "./variables.scss";
+@import "./mixins.scss";
 
 /****** style global site ******/
 * {
@@ -46,7 +32,7 @@ a {
     color: black;
 }
 
-/****** class qui se répète ******/
+/****** class repet ******/
 
 .box--shadow {
     @include box--shadow;
@@ -233,8 +219,15 @@ a {
 .restaurants {
     padding: 40px 18px;
     background-color: lighten(black, 92);
-    &__title {
-        margin-bottom: 20px ;
+    h2 {
+        font-size: 20px;
+        margin: 0 0 20px 12px;
+        @media screen and(min-width: 575px) {
+            text-align: center;
+        }
+        @media screen and(min-width: 820px) {
+            text-align: center;
+        }
     }
     &__block-all {
         display: flex;
@@ -245,12 +238,20 @@ a {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+        @media screen and(min-width: 575px) {
+            display: flex;
+            flex-direction: row;
+            column-gap: 15px;
+        }
     }
 
     &__block-card {
         height: 250px;
         position: relative;
         border-radius: 10px;
+        @media screen and(min-width: 575px) {
+            width: 50%;
+        }
     }
     &__block-img {
         height: 70%;

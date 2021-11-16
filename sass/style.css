@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-/****** style global site ******/
+/****** variables & mixins ******/
 /****** style global site ******/
 * {
   font-family: 'Roboto', sans-serif;
@@ -27,7 +27,7 @@ a {
   color: black;
 }
 
-/****** class qui se répète ******/
+/****** class repet ******/
 .box--shadow {
   box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.21);
   -webkit-box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.21);
@@ -294,8 +294,21 @@ a {
   background-color: #ebebeb;
 }
 
-.restaurants__title {
-  margin-bottom: 20px;
+.restaurants h2 {
+  font-size: 20px;
+  margin: 0 0 20px 12px;
+}
+
+@media screen and (min-width: 575px) {
+  .restaurants h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .restaurants h2 {
+    text-align: center;
+  }
 }
 
 .restaurants__block-all {
@@ -320,10 +333,30 @@ a {
   row-gap: 20px;
 }
 
+@media screen and (min-width: 575px) {
+  .restaurants__block-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
+
 .restaurants__block-card {
   height: 250px;
   position: relative;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 575px) {
+  .restaurants__block-card {
+    width: 50%;
+  }
 }
 
 .restaurants__block-img {
