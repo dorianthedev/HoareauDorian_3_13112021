@@ -6,6 +6,20 @@ $color-primaire: #9356DC;
 $color-secondaire:#FF79DA;
 $color-tertiaire:#99E2D0;
 
+@mixin button-background {
+    background: rgb(147,86,220);
+    background: -moz-linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
+    background: -webkit-linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
+    background: linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);   
+}
+
+@mixin box--shadow {
+    box-shadow: 3px 6px 8px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 3px 6px 8px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 6px 8px 0px rgba(0,0,0,0.21);
+}
+
 /****** style global site ******/
 * {
     font-family: 'Roboto', sans-serif;
@@ -30,6 +44,13 @@ a {
 
 /****** class qui se répète ******/
 
+.box--shadow {
+    @include box--shadow;
+}
+
+.button--background {
+    @include button-background;
+}
 
 
 /****** Début header ******/
@@ -74,11 +95,16 @@ a {
 }
 
 /****** Début section présentation ******/
+.presentation-functioning-no-mobil {
+    @media screen and(min-width: 575px) {
+        display: flex;
+    }
+}
 
 .presentation {
     background-color: lighten(black, 92);
     &__block-all {
-        padding: 40px 0;
+        padding: 40px 0 60px 0;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -88,6 +114,7 @@ a {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+
         h2 {
             font-size: 22px;
             padding: 0 60px;
@@ -96,5 +123,73 @@ a {
             padding: 0 30px;
             color: lighten(black, 35);
         }
+    }
+    &__button {
+        padding: 0.8em 1em;
+        border-radius: 25px;
+    }
+    a {
+        color: white;
+        font-size: 15px;
+    }
+    @media screen and(min-width: 575px) {
+        width: 50%;
+    }
+}
+
+/****** Début section functioning ******/
+.functioning {
+    padding: 30px 0;
+    h2 {
+        font-size: 20px;
+        margin: 0 0 0 12px;
+    }
+    
+    &__block {
+        margin: 0 20px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        background-color: lighten(black, 92);
+        position: relative;
+        margin-bottom: 25px;
+        &:hover {
+            background-color: lighten($color-primaire, 32);
+        }
+    }
+    &__block-num {
+        height: 20px;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50%;
+        left: -8px;
+        text-align: center;
+        background-color: $color-primaire;
+    }
+    &__num {
+        color: white;
+        font-size: 11px;
+    }
+    &__icon-and-text {
+        width: 100%;
+        display: flex;
+        column-gap: 10px;
+        margin-left: 10%;
+        
+    }
+    &__block
+    .fa-list-ul, .fa-store, .fa-mobile-alt {
+        font-size: 14px;
+        color: lighten(black, 32);
+        &:hover {
+            color: darken($color-primaire, 12);
+        }
+    }
+    @media screen and(min-width: 575px) {
+        width: 50%;
     }
 }
