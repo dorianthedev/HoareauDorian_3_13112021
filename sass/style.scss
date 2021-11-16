@@ -230,7 +230,25 @@ a {
 
 /****** Début section restaurants******/
 
-
+.restaurants {
+    height: auto;
+    &__block-card {
+        height: 190px;
+    }
+    &__block-img {
+        height: 80%;
+        width: 100%;
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__block-text-icon {
+        height: 20%;
+        display: flex;
+    }
+}
 /****** Début section footer******/
 .footer {
     background-color: lighten(black, 22);

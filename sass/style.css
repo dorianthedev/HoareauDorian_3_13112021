@@ -289,6 +289,33 @@ a {
 }
 
 /****** Début section restaurants******/
+.restaurants {
+  height: auto;
+}
+
+.restaurants__block-card {
+  height: 190px;
+}
+
+.restaurants__block-img {
+  height: 80%;
+  width: 100%;
+}
+
+.restaurants__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurants__block-text-icon {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /****** Début section footer******/
 .footer {
   background-color: #383838;
