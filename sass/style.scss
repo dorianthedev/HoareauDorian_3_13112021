@@ -37,6 +37,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -205,7 +209,7 @@ a {
         display: flex;
         align-items: center;
         column-gap: 10px;
-        margin-left: 15%;
+        margin-left: 10%;
         
     }
     &__block-icon {
@@ -221,5 +225,30 @@ a {
     }
     h4 {
         font-size: 14px;
+    }
+}
+
+/****** Début section footer******/
+.footer {
+    background-color: lighten(black, 22);
+    color: white;
+    padding: 20px 12px;
+    h1 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+    }
+    li, a {
+        font-size: 12px;
+        color: white;
+    }
+    .fas {
+        width: 10px;
+        margin-right: 10px;
     }
 }

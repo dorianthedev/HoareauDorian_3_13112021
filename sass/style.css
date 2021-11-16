@@ -18,6 +18,10 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -264,7 +268,7 @@ a {
           align-items: center;
   -webkit-column-gap: 10px;
           column-gap: 10px;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .functioning__block-icon {
@@ -282,5 +286,39 @@ a {
 
 .functioning h4 {
   font-size: 14px;
+}
+
+/****** Début section footer******/
+.footer {
+  background-color: #383838;
+  color: white;
+  padding: 20px 12px;
+}
+
+.footer h1 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 7px;
+}
+
+.footer li, .footer a {
+  font-size: 12px;
+  color: white;
+}
+
+.footer .fas {
+  width: 10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
