@@ -231,23 +231,65 @@ a {
 /****** Début section restaurants******/
 
 .restaurants {
-    height: auto;
+    padding: 40px 18px;
+    background-color: lighten(black, 92);
+    &__title {
+        margin-bottom: 20px ;
+    }
+    &__block-all {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__block-column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
     &__block-card {
-        height: 190px;
+        height: 250px;
+        position: relative;
+        border-radius: 10px;
     }
     &__block-img {
-        height: 80%;
+        height: 70%;
         width: 100%;
+        border-radius: 10px;
     }
     &__img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 10px 10px 0 0;
     }
     &__block-text-icon {
-        height: 20%;
+        height: 30%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 0 12px;
+        border-radius: 0 0 15px 15px;
     }
+    &__block-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    &__block-news {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        p {
+            background-color: $color-tertiaire;
+            color: darken($color-tertiaire, 38);
+            font-weight: 500;
+            padding: 0.4em 0.7em;
+            border-radius: 5px;
+        }
+    }
+    
 }
 /****** Début section footer******/
 .footer {
@@ -276,7 +318,7 @@ a {
         color: white;
     }
     
-    .fas {
+    .fa-utensils, .fa-hands-helping {
         width: 10px;
         margin-right: 10px;
     }

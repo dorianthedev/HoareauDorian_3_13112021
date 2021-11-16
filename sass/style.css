@@ -290,16 +290,46 @@ a {
 
 /****** Début section restaurants******/
 .restaurants {
-  height: auto;
+  padding: 40px 18px;
+  background-color: #ebebeb;
+}
+
+.restaurants__title {
+  margin-bottom: 20px;
+}
+
+.restaurants__block-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+.restaurants__block-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
 }
 
 .restaurants__block-card {
-  height: 190px;
+  height: 250px;
+  position: relative;
+  border-radius: 10px;
 }
 
 .restaurants__block-img {
-  height: 80%;
+  height: 70%;
   width: 100%;
+  border-radius: 10px;
 }
 
 .restaurants__img {
@@ -307,13 +337,48 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .restaurants__block-text-icon {
-  height: 20%;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 0 12px;
+  border-radius: 0 0 15px 15px;
+}
+
+.restaurants__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+}
+
+.restaurants__block-news {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.restaurants__block-news p {
+  background-color: #99E2D0;
+  color: #299077;
+  font-weight: 500;
+  padding: 0.4em 0.7em;
+  border-radius: 5px;
 }
 
 /****** Début section footer******/
@@ -362,7 +427,7 @@ a {
   color: white;
 }
 
-.footer .fas {
+.footer .fa-utensils, .footer .fa-hands-helping {
   width: 10px;
   margin-right: 10px;
 }
