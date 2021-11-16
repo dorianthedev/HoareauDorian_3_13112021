@@ -1,1 +1,117 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/****** style global site ******/
+/****** style global site ******/
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/****** class qui se répète ******/
+/****** Début header ******/
+.header__block-logo {
+  padding: 5px 0;
+}
+
+.header__block-logo .logo {
+  text-align: center;
+  margin: auto;
+  font-size: 24px;
+}
+
+/****** Début section position ******/
+.position-city {
+  background-color: #dedede;
+}
+
+.position-city__block-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 17px;
+          column-gap: 17px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 42px;
+  -webkit-box-shadow: inset 0 7px 7px -8px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 7px 7px -8px rgba(0, 0, 0, 0.4);
+}
+
+.position-city__block-icon {
+  padding-bottom: 4px;
+}
+
+.position-city .fa-map-marker-alt {
+  font-size: 14px;
+  color: #262626;
+}
+
+.position-city__block-text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+}
+
+/****** Début section présentation ******/
+.presentation {
+  background-color: #ebebeb;
+}
+
+.presentation__block-all {
+  padding: 40px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.presentation__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+.presentation__block-text h2 {
+  font-size: 22px;
+  padding: 0 60px;
+}
+
+.presentation__block-text p {
+  padding: 0 30px;
+  color: #595959;
+}
+/*# sourceMappingURL=style.css.map */
