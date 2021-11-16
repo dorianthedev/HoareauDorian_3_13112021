@@ -301,6 +301,12 @@ a {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 575px) {
+  .footer h1 {
+    text-align: center;
+  }
+}
+
 .footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,6 +316,17 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 7px;
+}
+
+@media screen and (min-width: 575px) {
+  .footer ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer li, .footer a {

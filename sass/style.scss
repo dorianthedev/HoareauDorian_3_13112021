@@ -237,16 +237,24 @@ a {
         font-size: 14px;
         font-weight: normal;
         margin-bottom: 10px;
+        @media screen and(min-width: 575px) {
+            text-align: center;
+        }
     }
     ul {
         display: flex;
         flex-direction: column;
         row-gap: 7px;
+        @media screen and(min-width: 575px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
     li, a {
         font-size: 12px;
         color: white;
     }
+    
     .fas {
         width: 10px;
         margin-right: 10px;
