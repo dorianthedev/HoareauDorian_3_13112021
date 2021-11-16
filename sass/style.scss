@@ -99,10 +99,19 @@ a {
     @media screen and(min-width: 575px) {
         display: flex;
     }
+    @media screen and(min-width: 820px) {
+        display: block;
+    }
 }
 
 .presentation {
     background-color: lighten(black, 92);
+    @media screen and(min-width: 575px) {
+        width: 50%;
+    }
+    @media screen and(min-width: 820px) {
+        width: 100%;
+    }
     &__block-all {
         padding: 40px 0 60px 0;
         text-align: center;
@@ -132,14 +141,17 @@ a {
         color: white;
         font-size: 15px;
     }
-    @media screen and(min-width: 575px) {
-        width: 50%;
-    }
 }
 
 /****** Début section functioning ******/
 .functioning {
     padding: 30px 0;
+    @media screen and(min-width: 575px) {
+        width: 50%;
+    }
+    @media screen and(min-width: 820px) {
+        width: 100%;
+    }
     h2 {
         font-size: 20px;
         margin: 0 0 0 12px;
@@ -156,6 +168,13 @@ a {
         margin-bottom: 25px;
         &:hover {
             background-color: lighten($color-primaire, 32);
+        }
+        .fa-list-ul, .fa-store, .fa-mobile-alt {
+            font-size: 14px;
+            color: lighten(black, 32);
+                &:hover {
+                    color: darken($color-primaire, 12);
+                }
         }
     }
     &__block-num {
@@ -180,16 +199,5 @@ a {
         column-gap: 10px;
         margin-left: 10%;
         
-    }
-    &__block
-    .fa-list-ul, .fa-store, .fa-mobile-alt {
-        font-size: 14px;
-        color: lighten(black, 32);
-        &:hover {
-            color: darken($color-primaire, 12);
-        }
-    }
-    @media screen and(min-width: 575px) {
-        width: 50%;
     }
 }
