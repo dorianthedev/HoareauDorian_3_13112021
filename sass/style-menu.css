@@ -70,6 +70,19 @@ a {
   font-size: 20px;
 }
 
+/****** Début section image-menu******/
+.image-menu__block-img {
+  height: 300px;
+  width: 100%;
+}
+
+.image-menu__img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /****** Début section footer******/
 .footer {
   background-color: #383838;
