@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+/****** variables & mixins ******/
+@import "./variables.scss";
+@import "./mixins.scss";
+
+/****** style global site ******/
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/****** class repet ******/
+
+.box--shadow {
+    @include box--shadow;
+}
+
+.button--background {
+    @include button-background;
+}
+
+
+
+
+/****** Début section footer******/
+.footer {
+    background-color: lighten(black, 22);
+    color: white;
+    padding: 20px 12px;
+    h1 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 10px;
+        @media screen and(min-width: 575px) {
+            text-align: center;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+        @media screen and(min-width: 575px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    li, a {
+        font-size: 12px;
+        color: white;
+    }
+    
+    .fa-utensils, .fa-hands-helping {
+        width: 10px;
+        margin-right: 10px;
+    }
+}
