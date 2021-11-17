@@ -42,6 +42,28 @@ a {
     @include button-background;
 }
 
+/****** Début header ******/
+.header {
+    &__block-all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0;
+        position: relative;
+    }
+    &__block-icon {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        padding-left: 12px ;
+    }
+    &__logo {
+    font-size: 27px;
+    }
+    &__block-icon {
+        font-size: 20px;
+    }
+}
 
 
 

@@ -40,6 +40,36 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
 }
 
+/****** Début header ******/
+.header__block-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+  position: relative;
+}
+
+.header__block-icon {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  padding-left: 12px;
+}
+
+.header__logo {
+  font-size: 27px;
+}
+
+.header__block-icon {
+  font-size: 20px;
+}
+
 /****** Début section footer******/
 .footer {
   background-color: #383838;
