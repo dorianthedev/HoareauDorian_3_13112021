@@ -72,12 +72,12 @@ a {
 
 /****** Début section image-menu******/
 .image-menu__block-img {
-  height: 300px;
+  height: 280px;
   width: 100%;
 }
 
 .image-menu__img {
-  height: 300px;
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
