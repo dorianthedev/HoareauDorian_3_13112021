@@ -169,6 +169,8 @@ a {
 
 /****** Début section functioning ******/
 .functioning {
+  max-width: 900px;
+  margin: auto;
   padding: 30px 0;
 }
 
@@ -326,6 +328,8 @@ a {
 }
 
 .restaurants__block-all {
+  max-width: 900px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
