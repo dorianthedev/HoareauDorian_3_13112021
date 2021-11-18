@@ -31,9 +31,9 @@ a {
 
 /****** class repet ******/
 .box--shadow {
-  box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.21);
-  -webkit-box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 6px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .button--background {
