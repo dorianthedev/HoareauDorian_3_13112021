@@ -176,10 +176,14 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 5px;
+  width: 200px;
 }
 
 .menu__block-text p {
   font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /****** Début section footer******/
