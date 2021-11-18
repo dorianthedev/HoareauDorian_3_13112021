@@ -420,6 +420,10 @@ a {
   row-gap: 5px;
 }
 
+.restaurants__block-text p {
+  color: #595959;
+}
+
 .restaurants__block-news {
   position: absolute;
   top: 20px;
@@ -432,6 +436,10 @@ a {
   font-weight: 500;
   padding: 0.4em 0.7em;
   border-radius: 5px;
+}
+
+.restaurants__block-icon {
+  font-size: 25px;
 }
 
 /****** Début section footer******/

@@ -114,6 +114,10 @@ main {
           column-gap: 25px;
 }
 
+.menu__block-icon {
+  font-size: 24px;
+}
+
 .menu__block-repas {
   padding: 0 10px;
   display: -webkit-box;
@@ -184,6 +188,16 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  color: #595959;
+}
+
+.menu__block-price {
+  margin-right: 10px;
+}
+
+.menu__block-price p {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /****** Début section footer******/

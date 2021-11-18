@@ -290,6 +290,9 @@ a {
         display: flex;
         flex-direction: column;
         row-gap: 5px;
+        p {
+            color: lighten(black, 35);
+        }
     }
     &__block-news {
         position: absolute;
@@ -302,6 +305,9 @@ a {
             padding: 0.4em 0.7em;
             border-radius: 5px;
         }
+    }
+    &__block-icon {
+        font-size: 25px;
     }
     
 }

@@ -90,13 +90,16 @@ main {
     border-radius: 30px 30px 0 0;
     background-color: lighten(black, 92);
     margin-bottom: -40px;
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
     &__en-tete {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 20px 0px 20px 10px;
         column-gap: 25px;
+    }
+    &__block-icon {
+        font-size: 24px;
     }
     &__block-repas {
         padding: 0 10px;
@@ -141,6 +144,14 @@ main {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            color: lighten(black, 35);
+        }
+    }
+    &__block-price {
+        margin-right: 10px;
+        p {
+            font-size: 14px;
+            font-weight: bold;
         }
     }
     
