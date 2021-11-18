@@ -90,12 +90,34 @@ main {
     border-radius: 30px 30px 0 0;
     background-color: lighten(black, 92);
     margin-bottom: -40px;
+    padding-bottom: 40px ;
     &__en-tete {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 20px 0px 20px 10px;
         column-gap: 25px;
+    }
+    &__type-plats {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 15px;
+        &::after {
+            content: "";
+            margin-top: 4px;
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: darken($color-tertiaire, 20);
+        }
+    }
+    &__block-card {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+    }
+    &__block-repas {
+        padding: 0 10px;
     }
 }
 
