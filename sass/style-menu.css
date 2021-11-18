@@ -176,7 +176,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 5px;
-  width: 200px;
+  width: 85%;
 }
 
 .menu__block-text p {
