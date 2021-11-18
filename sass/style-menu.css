@@ -95,7 +95,7 @@ main {
   border-radius: 30px 30px 0 0;
   background-color: #ebebeb;
   margin-bottom: -40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .menu__en-tete {
@@ -114,9 +114,32 @@ main {
           column-gap: 25px;
 }
 
+.menu__block-repas {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.menu__block-entrees, .menu__block-plats, .menu__block-desserts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
 .menu__type-plats {
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 15px;
 }
 
@@ -136,11 +159,27 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid black;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
 }
 
-.menu__block-repas {
-  padding: 0 10px;
+.menu__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+}
+
+.menu__block-text p {
+  font-size: 14px;
 }
 
 /****** Début section footer******/

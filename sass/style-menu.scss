@@ -90,7 +90,7 @@ main {
     border-radius: 30px 30px 0 0;
     background-color: lighten(black, 92);
     margin-bottom: -40px;
-    padding-bottom: 40px ;
+    padding-bottom: 20px ;
     &__en-tete {
         display: flex;
         flex-direction: row;
@@ -98,9 +98,21 @@ main {
         padding: 20px 0px 20px 10px;
         column-gap: 25px;
     }
+    &__block-repas {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    &__block-entrees, &__block-plats, &__block-desserts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
     &__type-plats {
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         font-size: 15px;
         &::after {
             content: "";
@@ -114,11 +126,20 @@ main {
     &__block-card {
         display: flex;
         justify-content: space-between;
-        border: 1px solid black;
+        align-items: flex-end;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
     }
-    &__block-repas {
-        padding: 0 10px;
+    &__block-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        p {
+            font-size: 14px;
+        }
     }
+    
 }
 
 /****** Début section footer******/
