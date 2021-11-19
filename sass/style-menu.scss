@@ -160,8 +160,24 @@ main {
             font-weight: bold;
         }
     }
+    &__block-button {
+        margin: 35px 0 55px 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__button {
+        padding: 0.8em 3em;
+        border-radius: 25px;
+    }
+    a {
+        color: white;
+        font-size: 15px;
+    }
     
 }
+
+
+
 
 /****** Début section footer******/
 .footer {

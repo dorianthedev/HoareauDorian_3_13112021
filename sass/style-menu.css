@@ -56,8 +56,8 @@ a {
   background: #9356dc;
   background: linear-gradient(354deg, #9356dc 39%, #ff79da 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
-  -webkit-filter: brightness(1.75);
-          filter: brightness(1.75);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 /****** Début header ******/
@@ -216,6 +216,26 @@ main {
 .menu__block-price p {
   font-size: 14px;
   font-weight: bold;
+}
+
+.menu__block-button {
+  margin: 35px 0 55px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__button {
+  padding: 0.8em 3em;
+  border-radius: 25px;
+}
+
+.menu a {
+  color: white;
+  font-size: 15px;
 }
 
 /****** Début section footer******/
