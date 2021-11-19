@@ -37,10 +37,16 @@ a {
 
 .box--shadow {
     @include box--shadow;
+    &:hover {
+        @include box--shadow--hover;
+    }
 }
 
 .button--background {
     @include button-background;
+    &:hover {
+        @include button--background--hover;
+    }
 }
 
 /****** Début header ******/
