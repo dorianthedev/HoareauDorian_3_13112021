@@ -178,7 +178,7 @@ a {
             width: 33%;
         }
         &:hover {
-            background-color: lighten($color-primaire, 32);
+            background-color: lighten($color-primaire, 28);
             i {
                 color: darken($color-primaire, 12);
             }
