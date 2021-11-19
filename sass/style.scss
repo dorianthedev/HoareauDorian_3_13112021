@@ -170,11 +170,15 @@ a {
         background-color: lighten(black, 92);
         position: relative;
         margin-bottom: 25px;
+        transition: all 500ms;
         @media screen and(min-width: 820px) {
             width: 33%;
         }
         &:hover {
             background-color: lighten($color-primaire, 32);
+            i {
+                color: darken($color-primaire, 12);
+            }
         }
     }
     &__block-num {
@@ -208,9 +212,7 @@ a {
     .fa-list-ul, .fa-store, .fa-mobile-alt {
         font-size: 14px;
         color: lighten(black, 32);
-            &:hover {
-                color: darken($color-primaire, 12);
-            }
+        
     }
     h4 {
         font-size: 14px;
