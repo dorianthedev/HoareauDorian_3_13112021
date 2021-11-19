@@ -54,8 +54,10 @@ a {
 
 .button--background:hover {
   background: #9356dc;
-  background: linear-gradient(354deg, rgba(147, 86, 220, 0.849177) 39%, rgba(255, 121, 218, 0.823967) 100%);
+  background: linear-gradient(354deg, #9356dc 39%, #ff79da 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
+  -webkit-filter: brightness(1.75);
+          filter: brightness(1.75);
 }
 
 /****** Début header ******/
