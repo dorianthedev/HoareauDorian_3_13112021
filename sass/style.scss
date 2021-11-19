@@ -44,6 +44,9 @@ a {
 
 .button--background {
     @include button-background;
+    &:hover {
+        @include button--background--hover;
+    }
 }
 
 

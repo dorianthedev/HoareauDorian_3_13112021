@@ -3,7 +3,16 @@
     background: -moz-linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
     background: -webkit-linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
     background: linear-gradient(354deg, rgba(147,86,220,1) 39%, rgba(255,121,218,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
+    transition: all 300ms;
+}
+
+@mixin button--background--hover {
+    background: rgb(147,86,220);
+    background: -moz-linear-gradient(354deg, rgba(147,86,220,0.8491771708683473) 39%, rgba(255,121,218,0.8239670868347339) 100%);
+    background: -webkit-linear-gradient(354deg, rgba(147,86,220,0.8491771708683473) 39%, rgba(255,121,218,0.8239670868347339) 100%);
+    background: linear-gradient(354deg, rgba(147,86,220,0.8491771708683473) 39%, rgba(255,121,218,0.8239670868347339) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
 }
 
 @mixin box--shadow {
