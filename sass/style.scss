@@ -37,6 +37,9 @@ a {
 
 .box--shadow {
     @include box--shadow;
+    &:hover {
+        @include box--shadow--hover;
+    }
 }
 
 .button--background {
