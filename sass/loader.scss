@@ -1,8 +1,9 @@
+@import "./variables.scss";
+
+
 .loader {
-    border-top: 10px solid black;
-    border-bottom: 10px solid red;
-    border-left: 10px solid yellow;
-    border-right: 10px solid green;
+    border-top: 10px solid $color-primaire;
+    border-bottom: 10px solid $color-secondaire;
     border-radius: 50%;
     width: 100px;
     height: 100px;

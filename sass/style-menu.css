@@ -136,6 +136,22 @@ main {
   font-size: 24px;
 }
 
+.menu__block-icon .fa-heart {
+  background-color: transparent;
+  -webkit-transition: color 300ms ease-in;
+  transition: color 300ms ease-in;
+}
+
+.menu__block-icon .fa-heart:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #9356DC), to(#FF79DA));
+  background: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
+  background: -webkit-linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
+  color: transparent;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .menu__block-repas {
   padding: 0 10px;
   display: -webkit-box;

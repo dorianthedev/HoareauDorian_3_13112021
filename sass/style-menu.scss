@@ -106,6 +106,18 @@ main {
     }
     &__block-icon {
         font-size: 24px;
+        .fa-heart {
+            background-color: transparent;
+            transition: color 300ms ease-in;
+            &:hover {
+                background: linear-gradient(180deg, $color-primaire 25%, $color-secondaire 100%);
+                background: -webkit-linear-gradient(180deg, $color-primaire 25%, $color-secondaire 100%);
+                color: transparent;
+                font-weight: bold;
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+        }
     }
     &__block-repas {
         padding: 0 10px;
