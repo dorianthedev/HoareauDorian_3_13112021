@@ -78,6 +78,15 @@ a {
     &__block-img {
         height: 280px;
         width: 100%;
+        @media screen and(min-width: 575px) {
+            height: 350px;
+        }
+        @media screen and(min-width: 820px) {
+            height: 450px;
+        }
+        @media screen and(min-width: 1020px) {
+            height: 600px;
+        }
     }
     &__img {
         height: 100%;
@@ -103,6 +112,9 @@ main {
         align-items: center;
         padding: 20px 0px 20px 10px;
         column-gap: 25px;
+        @media screen and(min-width: 575px) {
+            justify-content: center;
+        }
     }
     &__block-icon {
         font-size: 24px;
@@ -129,6 +141,13 @@ main {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+        @media screen and(min-width: 575px) {
+            width: 70%;
+            margin: auto;
+        }
+        @media screen and(min-width: 820px) {
+            width: 50%;
+        }
     }
 
     &__type-plats {
