@@ -1,8 +1,7 @@
 .block__loader {
   background-color: white;
-  -webkit-animation: bk 3s cubic-bezier(0.78, 0.12, 0.21, 1.01);
-  animation: bk 3s cubic-bezier(0.78, 0.12, 0.21, 1.01);
-  margin: auto;
+  -webkit-animation: bk 3s ease-in;
+  animation: bk 3s ease-in;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -19,7 +18,7 @@
   }
   100% {
     opacity: 0;
-    z-index: -10;
+    z-index: -2;
   }
 }
 
@@ -29,7 +28,7 @@
   }
   100% {
     opacity: 0;
-    z-index: -10;
+    z-index: -2;
   }
 }
 
@@ -39,8 +38,8 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 3s cubic-bezier(0.78, 0.12, 0.21, 1.01);
-  animation: spin 3s cubic-bezier(0.78, 0.12, 0.21, 1.01);
+  -webkit-animation: spin 2900ms ease-in;
+  animation: spin 2900ms ease-in;
   margin: auto;
   position: absolute;
   top: 0;
@@ -60,7 +59,7 @@
   100% {
     -webkit-transform: rotate(360deg);
     opacity: 0;
-    z-index: -10;
+    z-index: -1;
   }
 }
 
@@ -72,7 +71,7 @@
   100% {
     -webkit-transform: rotate(360deg);
     opacity: 0;
-    z-index: -10;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=loader.css.map */
