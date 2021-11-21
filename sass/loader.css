@@ -19,6 +19,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -10;
   }
 }
 
@@ -28,6 +29,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -10;
   }
 }
 
@@ -58,6 +60,7 @@
   100% {
     -webkit-transform: rotate(360deg);
     opacity: 0;
+    z-index: -10;
   }
 }
 
@@ -69,6 +72,7 @@
   100% {
     -webkit-transform: rotate(360deg);
     opacity: 0;
+    z-index: -10;
   }
 }
 /*# sourceMappingURL=loader.css.map */
