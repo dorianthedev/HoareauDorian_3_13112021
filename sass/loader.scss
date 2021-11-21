@@ -1,5 +1,37 @@
 @import "./variables.scss";
 
+.block__loader {
+    background-color: white;
+    -webkit-animation: bk 3s cubic-bezier(.78,.12,.21,1.01);
+    -o-animation: bk 3s cubic-bezier(.78,.12,.21,1.01);
+    animation: bk 3s cubic-bezier(.78,.12,.21,1.01);
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 4;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes bk {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        
+    }
+}
+
+@keyframes bk {
+    0% {
+        
+        opacity: 1;
+    }
+    100% {
+        
+        opacity: 0;
+        
+    }
+}
 
 .loader {
     border-top: 10px solid $color-primaire;
@@ -7,15 +39,13 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    -webkit-animation: spin 1.5s linear infinite;
-    -o-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-
+    -webkit-animation: spin 3s cubic-bezier(.78,.12,.21,1.01);
+    -o-animation: spin 3s cubic-bezier(.78,.12,.21,1.01);
+    animation: spin 3s cubic-bezier(.78,.12,.21,1.01);
     margin: auto;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: 4;
-    animation: spin 3s linear;
     animation-fill-mode: forwards;
 }
 
@@ -27,7 +57,7 @@
     100% {
         -webkit-transform: rotate(360deg);
         opacity: 0;
-        display: none;
+       
     }
 }
 
@@ -39,6 +69,6 @@
     100% {
         -webkit-transform: rotate(360deg);
         opacity: 0;
-        display: none;
+        
     }
 }
