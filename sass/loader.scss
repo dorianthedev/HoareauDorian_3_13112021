@@ -5,10 +5,16 @@
     -webkit-animation: bk 3s ease-in;
     -o-animation: bk 3s ease-in;
     animation: bk 3s ease-in;
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 4;
     animation-fill-mode: forwards;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }
 @-webkit-keyframes bk {
     0% {
@@ -42,9 +48,6 @@
     -webkit-animation: spin 2900ms ease-in;
     -o-animation: spin 2900ms ease-in;
     animation: spin 2900ms ease-in;
-    margin: auto;
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
     z-index: 4;
     animation-fill-mode: forwards;
 }
