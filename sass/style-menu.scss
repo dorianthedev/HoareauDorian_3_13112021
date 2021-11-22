@@ -136,6 +136,7 @@ main {
         display: flex;
         flex-direction: column;
         row-gap: 40px;
+        overflow: hidden;
     }
     &__block-entrees, &__block-plats, &__block-desserts {
         display: flex;
