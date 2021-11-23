@@ -189,6 +189,7 @@ main {
           flex-direction: column;
   row-gap: 40px;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .menu__block-entrees, .menu__block-plats, .menu__block-desserts {
@@ -271,6 +272,7 @@ main {
 }
 
 .menu__block-text h4 {
+  font-size: 17px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -326,15 +328,24 @@ main {
   color: white;
   font-size: 19px;
   font-weight: bold;
+  -webkit-transition: -webkit-transform 700ms;
+  transition: -webkit-transform 700ms;
+  transition: transform 700ms;
+  transition: transform 700ms, -webkit-transform 700ms;
 }
 
-.menu__block-card:not(:active) .menu__block-check {
-  animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
-  -moz-animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
+.menu__block-card:hover .fa-check-circle {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.menu__block-card:hover .menu__block-check {
+  animation: swipe-left 600ms both cubic-bezier(0.87, 0.01, 0.46, 0.87);
+  -moz-animation: swipe-left 600ms both cubic-bezier(0.87, 0.01, 0.46, 0.87);
   /* Firefox */
-  -webkit-animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
+  -webkit-animation: swipe-left 600ms both cubic-bezier(0.87, 0.01, 0.46, 0.87);
   /* Safari et Chrome */
-  -o-animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
+  -o-animation: swipe-left 600ms both cubic-bezier(0.87, 0.01, 0.46, 0.87);
   /* Opera */
 }
 
