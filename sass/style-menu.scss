@@ -168,16 +168,18 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 10px;
         border-radius: 10px;
         background-color: white;
-        
+        height: 60px;
+        overflow: hidden;
     }
     &__block-text {
         display: flex;
         flex-direction: column;
         row-gap: 5px;
-        width: 85%;
+        width: 50px;
+        flex-grow: 2;
+        padding: 10px 0 10px 10px;
         p {
             font-size: 14px;
             text-overflow: ellipsis;
@@ -193,6 +195,7 @@ main {
     }
     &__block-price {
         margin-right: 10px;
+        padding-bottom: 10px;
         p {
             font-size: 14px;
             font-weight: bold;
@@ -210,6 +213,16 @@ main {
     a {
         color: white;
         font-size: 15px;
+    }
+    &__block-check {
+        
+        height: 60px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        flex: none;
     }
     
 }

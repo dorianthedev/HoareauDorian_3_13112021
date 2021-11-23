@@ -240,9 +240,10 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 10px;
   border-radius: 10px;
   background-color: white;
+  height: 60px;
+  overflow: hidden;
 }
 
 .menu__block-text {
@@ -254,7 +255,11 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 5px;
-  width: 85%;
+  width: 50px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 10px 0 10px 10px;
 }
 
 .menu__block-text p {
@@ -273,6 +278,7 @@ main {
 
 .menu__block-price {
   margin-right: 10px;
+  padding-bottom: 10px;
 }
 
 .menu__block-price p {
@@ -298,6 +304,24 @@ main {
 .menu a {
   color: white;
   font-size: 15px;
+}
+
+.menu__block-check {
+  height: 60px;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 
 .fade-in-1 {
