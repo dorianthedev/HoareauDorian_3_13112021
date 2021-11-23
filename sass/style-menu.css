@@ -318,13 +318,58 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
+  width: 5px;
+  opacity: 0;
 }
 
 .menu__block-check .fa-check-circle {
   color: white;
   font-size: 19px;
   font-weight: bold;
+}
+
+.menu__block-card:not(:active) .menu__block-check {
+  animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
+  -moz-animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
+  /* Firefox */
+  -webkit-animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
+  /* Safari et Chrome */
+  -o-animation: swipe-left 1.5s cubic-bezier(0.87, 0.01, 0.46, 0.87);
+  /* Opera */
+}
+
+@-webkit-keyframes swipe-left {
+  from {
+    width: 5px;
+    opacity: 1;
+  }
+  to {
+    width: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes swipe-left {
+  from {
+    width: 5px;
+    opacity: 1;
+  }
+  to {
+    width: 50px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-1 {
+  /* sur Safari et Chrome */
+  from {
+    width: 5px;
+    opacity: 1;
+  }
+  to {
+    width: 50px;
+    opacity: 1;
+  }
 }
 
 .fade-in-1 {
