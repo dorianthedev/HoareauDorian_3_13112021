@@ -308,7 +308,7 @@ main {
 
 .menu__block-check {
   height: 60px;
-  background-color: aqua;
+  background-color: #b5eadd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,6 +322,12 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+}
+
+.menu__block-check .fa-check-circle {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .fade-in-1 {
