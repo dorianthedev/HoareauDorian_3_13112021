@@ -319,9 +319,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 50px;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
 }
 
 .menu__block-check .fa-check-circle {
