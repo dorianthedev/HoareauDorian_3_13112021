@@ -1,3 +1,8 @@
+ /* Correspond aux animations de la fa-check et du bloc
+ color tertiare qui apparait à la droite des cards dans les pages menus*/
+
+
+
 .menu__block-card:hover .menu__block-check {
     
     animation: swipe-left 600ms both cubic-bezier(.87,.01,.46,.87);
