@@ -353,6 +353,14 @@ a {
 .restaurants {
   padding: 40px 18px;
   background-color: #ebebeb;
+  /**** keyframes stroke animation *****/
+  /* sur Firefox */
+  /* sur Safari et Chrome */
+  /* sur Opera */
+  /**** keyframes fade animation *****/
+  /* sur Firefox */
+  /* sur Safari et Chrome */
+  /* sur Opera */
 }
 
 @media screen and (min-width: 575px) {
@@ -528,36 +536,23 @@ a {
 }
 
 .restaurants .icon .heart-main:hover path {
+  animation: stroke-animation 2s ease-in-out forwards;
+  -moz-animation: stroke-animation 2s ease-in-out forwards;
+  /* Firefox */
   -webkit-animation: stroke-animation 2s ease-in-out forwards;
-          animation: stroke-animation 2s ease-in-out forwards;
+  /* Safari et Chrome */
+  -o-animation: stroke-animation 2s ease-in-out forwards;
+  /* Opera */
 }
 
 .restaurants .icon .heart-main:hover ~ .heart-background path {
+  animation: fade-animation 2s ease-in-out forwards;
+  -moz-animation: fade-animation 2s ease-in-out forwards;
+  /* Firefox */
   -webkit-animation: fade-animation 2s ease-in-out forwards;
-          animation: fade-animation 2s ease-in-out forwards;
-}
-
-@-webkit-keyframes stroke-animation {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  30% {
-    stroke-dashoffset: 1550;
-  }
-  60% {
-    stroke-dashoffset: 3100;
-    fill: transparent;
-  }
-  80% {
-    fill: url(#mygradient);
-  }
-  90% {
-  }
-  100% {
-    stroke-dashoffset: 3100;
-    fill: url(#mygradient);
-    stroke: transparent;
-  }
+  /* Safari et Chrome */
+  -o-animation: fade-animation 2s ease-in-out forwards;
+  /* Opera */
 }
 
 @keyframes stroke-animation {
@@ -583,7 +578,30 @@ a {
   }
 }
 
-@-webkit-keyframes fade-animation {
+@-webkit-keyframes stroke-animation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dashoffset: 1550;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+  }
+  80% {
+    fill: url(#mygradient);
+  }
+  90% {
+  }
+  100% {
+    stroke-dashoffset: 3100;
+    fill: url(#mygradient);
+    stroke: transparent;
+  }
+}
+
+@keyframes fade-animation {
   70% {
     fill: transparent;
   }
@@ -599,7 +617,7 @@ a {
   }
 }
 
-@keyframes fade-animation {
+@-webkit-keyframes fade-animation {
   70% {
     fill: transparent;
   }

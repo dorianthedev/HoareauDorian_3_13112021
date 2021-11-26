@@ -25,15 +25,48 @@
     }
   
     .heart-main:hover path {
-      animation: stroke-animation 2s ease-in-out forwards;
+        animation: stroke-animation 2s ease-in-out forwards;
+        -moz-animation: stroke-animation 2s ease-in-out forwards; /* Firefox */
+        -webkit-animation: stroke-animation 2s ease-in-out forwards; /* Safari et Chrome */
+        -o-animation: stroke-animation 2s ease-in-out forwards; /* Opera */
     }
   
     .heart-main:hover ~ .heart-background path {
-      animation: fade-animation 2s ease-in-out forwards;
+        animation: fade-animation 2s ease-in-out forwards;
+        -moz-animation: fade-animation 2s ease-in-out forwards; /* Firefox */
+        -webkit-animation: fade-animation 2s ease-in-out forwards; /* Safari et Chrome */
+        -o-animation: fade-animation 2s ease-in-out forwards; /* Opera */
     }
 }
-  
+
+/**** keyframes stroke animation *****/
 @keyframes stroke-animation {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    30% {
+        stroke-dashoffset: 1550;
+    }
+    60% {
+        stroke-dashoffset: 3100;
+        fill: transparent;
+      
+    }
+    80% {
+        fill: url(#mygradient);
+      
+    }
+    90% {
+      
+    }
+    100% {
+        stroke-dashoffset: 3100;
+        fill: url(#mygradient);
+        stroke: transparent;
+    }
+}
+/* sur Firefox */
+@-moz-keyframes stroke-animation {
     0% {
       stroke-dashoffset: 0;
     }
@@ -58,6 +91,60 @@
       stroke: transparent;
     }
 }
+/* sur Safari et Chrome */
+@-webkit-keyframes stroke-animation { 
+    0% {
+        stroke-dashoffset: 0;
+    }
+    30% {
+        stroke-dashoffset: 1550;
+    }
+    60% {
+        stroke-dashoffset: 3100;
+        fill: transparent;
+        
+    }
+    80% {
+        fill: url(#mygradient);
+        
+    }
+    90% {
+        
+    }
+    100% {
+        stroke-dashoffset: 3100;
+        fill: url(#mygradient);
+        stroke: transparent;
+    }
+}
+/* sur Opera */
+@-o-keyframes stroke-animation { 
+    0% {
+        stroke-dashoffset: 0;
+    }
+    30% {
+        stroke-dashoffset: 1550;
+    }
+    60% {
+        stroke-dashoffset: 3100;
+        fill: transparent;
+        
+    }
+    80% {
+        fill: url(#mygradient);
+        
+    }
+    90% {
+        
+    }
+    100% {
+        stroke-dashoffset: 3100;
+        fill: url(#mygradient);
+        stroke: transparent;
+    }
+}
+
+/**** keyframes fade animation *****/
   
 @keyframes fade-animation {
     70% {
@@ -75,5 +162,56 @@
     100% {
       
       opacity: 0;
+    }
+}
+/* sur Firefox */
+@-moz-keyframes fade-animation {
+    70% {
+        fill: transparent;
+      
+    }
+    80% {
+        fill: url(#mygradient);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* sur Safari et Chrome */
+@-webkit-keyframes fade-animation { 
+    70% {
+        fill: transparent;
+      
+    }
+    80% {
+        fill: url(#mygradient);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* sur Opera */
+@-o-keyframes fade-animation { 
+    70% {
+        fill: transparent;
+      
+    }
+    80% {
+        fill: url(#mygradient);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
