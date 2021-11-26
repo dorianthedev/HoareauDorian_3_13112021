@@ -60,6 +60,7 @@ a {
           filter: brightness(1.2);
 }
 
+/* Le bloc html est juste placé au début  dans le fichier index.html*/
 .block__loader {
   background-color: white;
   display: -webkit-box;
@@ -439,6 +440,7 @@ a {
 .restaurants {
   padding: 40px 18px;
   background-color: #ebebeb;
+  /****** Début animation heart svg ******/
   /**** keyframes stroke animation *****/
   /* sur Firefox */
   /* sur Safari et Chrome */

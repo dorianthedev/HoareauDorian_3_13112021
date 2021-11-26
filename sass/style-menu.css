@@ -340,6 +340,9 @@ main {
   transform: rotate(360deg);
 }
 
+/****** Début animation fa check rotate et swipe left du block ******/
+/* Correspond aux animations de la fa-check et du bloc
+ color tertiare qui apparait à la droite des cards dans les pages menus*/
 .menu__block-card:hover .menu__block-check {
   animation: swipe-left 600ms both cubic-bezier(0.87, 0.01, 0.46, 0.87);
   -moz-animation: swipe-left 600ms both cubic-bezier(0.87, 0.01, 0.46, 0.87);
@@ -373,6 +376,10 @@ main {
   }
 }
 
+/****** Début animation des block entrees repas desserts qui
+s'affiche 1 par 1 ******/
+/* Correspond aux animations des blocs
+entrees repas dessert qui s'affiche 1 par 1*/
 .fade-in-1 {
   animation: fade-in-1 600ms cubic-bezier(0.87, 0.01, 0.46, 0.87);
   -moz-animation: fade-in-1 600ms cubic-bezier(0.87, 0.01, 0.46, 0.87);
