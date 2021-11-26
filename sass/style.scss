@@ -76,6 +76,7 @@ a {
         
     }
     &__block-icon {
+        margin-left: 10px;
         padding-bottom: 4px;
     }
     .fa-map-marker-alt {
@@ -83,12 +84,23 @@ a {
         color: lighten(black, 15);
     }
     &__block-text {
-        p {
-            font-size: 14px;
-            font-weight: 500;
-            color: lighten(black, 15);
+        width: 114px;
+        
+    }
+    input {
+        background-color: lighten(black, 87);
+        border-width: 0px;
+        border-style: none;
+        &:focus {
+            outline: none;
         }
-    } 
+    }
+    ::placeholder {
+        background-color: lighten(black, 87);
+        color: lighten(black, 15);
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
 
 /****** Début section présentation ******/

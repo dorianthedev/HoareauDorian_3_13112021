@@ -98,6 +98,7 @@ a {
 }
 
 .position-city__block-icon {
+  margin-left: 10px;
   padding-bottom: 4px;
 }
 
@@ -106,10 +107,46 @@ a {
   color: #262626;
 }
 
-.position-city__block-text p {
+.position-city__block-text {
+  width: 114px;
+}
+
+.position-city input {
+  background-color: #dedede;
+  border-width: 0px;
+  border-style: none;
+}
+
+.position-city input:focus {
+  outline: none;
+}
+
+.position-city ::-webkit-input-placeholder {
+  background-color: #dedede;
+  color: #262626;
   font-size: 14px;
   font-weight: 500;
+}
+
+.position-city :-ms-input-placeholder {
+  background-color: #dedede;
   color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.position-city ::-ms-input-placeholder {
+  background-color: #dedede;
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.position-city ::placeholder {
+  background-color: #dedede;
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /****** Début section présentation ******/
