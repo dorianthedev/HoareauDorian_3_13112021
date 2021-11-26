@@ -337,6 +337,7 @@ main {
 .menu__block-card:hover .fa-check-circle {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .menu__block-card:hover .menu__block-check {
