@@ -62,8 +62,6 @@ a {
 
 .block__loader {
   background-color: white;
-  -webkit-animation: bk 3s ease-in;
-  animation: bk 3s ease-in;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,16 +72,21 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 4;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
+  animation: bk 3s ease-in forwards;
+  -moz-animation: bk 3s ease-in forwards;
+  /* Firefox */
+  -webkit-animation: bk 3s ease-in forwards;
+  /* Safari et Chrome */
+  -o-animation: bk 3s ease-in forwards;
+  /* Opera */
 }
 
-@-webkit-keyframes bk {
+@keyframes bk {
   0% {
     opacity: 1;
   }
@@ -93,7 +96,7 @@ a {
   }
 }
 
-@keyframes bk {
+@-webkit-keyframes bk {
   0% {
     opacity: 1;
   }
@@ -109,14 +112,17 @@ a {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 2900ms ease-in;
-  animation: spin 2900ms ease-in;
   z-index: 4;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: spin 2900ms ease-in forwards;
+  -moz-animation: spin 2900ms ease-in forwards;
+  /* Firefox */
+  -webkit-animation: spin 2900ms ease-in forwards;
+  /* Safari et Chrome */
+  -o-animation: spin 2900ms ease-in forwards;
+  /* Opera */
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     opacity: 1;
@@ -128,7 +134,7 @@ a {
   }
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     opacity: 1;
