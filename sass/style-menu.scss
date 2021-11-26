@@ -244,58 +244,7 @@ main {
    
 }
 
-.menu__block-card:hover .menu__block-check {
-    
-    animation: swipe-left 600ms both cubic-bezier(.87,.01,.46,.87);
-    -moz-animation: swipe-left 600ms both cubic-bezier(.87,.01,.46,.87); /* Firefox */
-    -webkit-animation: swipe-left 600ms both cubic-bezier(.87,.01,.46,.87); /* Safari et Chrome */
-    -o-animation: swipe-left 600ms both cubic-bezier(.87,.01,.46,.87); /* Opera */
-   
-}
-@keyframes swipe-left  {
-    from {
-        width: 5px;
-        opacity: 1;
-        
-    }
-    to {
-        width: 50px;
-        opacity: 1;
-    }
-}
-@-moz-keyframes swipe-left { /* sur Firefox */
-    from {
-        width: 5px;
-        
-    }
-    to {
-        width: 50px;
-        opacity: 1;
-        
-    }
-}
-@-webkit-keyframes swipe-left { /* sur Safari et Chrome */
-    from {
-        width: 5px;
-        opacity: 1;
-    }
-    to {
-        width: 50px;
-        opacity: 1;
-    }
-}
-@-o-keyframes swipe-left { /* sur Opera */
-    from {
-        width: 5px;
-        opacity: 1;
-    }
-    to {
-        width: 50px;
-        opacity: 1;
-    }
-}
-
-
+@import "../partiels/menu-block-card-animation";
 
 @import "../partiels/fade-in-keyframes";
 
